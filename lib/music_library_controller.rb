@@ -104,11 +104,13 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_number = gets.strip.to_i
     binding.pry
-    if song_number >= 1 && song_number <= list_songs.length
+    if song_number >= 1 && song_number <= Song.all.length
       songs = Song.all
       
       songs.sort{|a, b| a.name <=> b.name}
       solution = songs[song_number-1]
+      
+      
       # list = list_songs[song_number - 1].split(" - ")
       # song_name = list[1]
       # artist_name = list[0].split(".")[1].strip
