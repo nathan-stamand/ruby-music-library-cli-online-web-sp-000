@@ -105,9 +105,10 @@ class MusicLibraryController
     song_number = gets.strip.to_i
     if song_number >= 1 && song_number <= list_songs.length
       songs = Song.all
+      binding.pry
       songs.sort{|a, b| a.name <=> b.name}
       solution = songs[song_number-1]
-      binding.pry
+      
       
       
       
