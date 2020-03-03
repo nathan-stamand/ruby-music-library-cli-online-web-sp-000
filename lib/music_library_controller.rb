@@ -109,6 +109,7 @@ class MusicLibraryController
       artist_name = list[0].split(".")[1].strip
       var = "Playing #{song_name} by #{artist_name}"
     end
+    binding.pry
   end 
   
   def exit 
