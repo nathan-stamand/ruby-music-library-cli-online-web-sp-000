@@ -108,7 +108,7 @@ class MusicLibraryController
       song_name = list[1]
       artist_name = list[0].split(".")[1].strip
       var = "Playing #{song_name} by #{artist_name}"
-      puts var
+      var
     end
   end 
   
