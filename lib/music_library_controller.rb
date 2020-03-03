@@ -110,13 +110,14 @@ class MusicLibraryController
       songs.sort{|a, b| a.name <=> b.name}
       solution = songs[song_number-1]
       
-      "Playing #{song_name} by #{artist_name}"
+     
       # list = list_songs[song_number - 1].split(" - ")
       # song_name = list[1]
       # artist_name = list[0].split(".")[1].strip
       # var = "Playing #{song_name} by #{artist_name}"
       # puts var
     end
+    "Playing #{solution.name} by #{solution.artist.name}"
   end 
   
   def exit 
