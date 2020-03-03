@@ -2,7 +2,12 @@
 
 require_relative '../config/environment'
 
-var = MusicLibraryController.new.call
-var 
+var = MusicLibraryController.new
+var.call
 
-if MusicLibraryController::
+case var.input 
+  when == "list songs" 
+    var.list_songs
+  end
+    
+
