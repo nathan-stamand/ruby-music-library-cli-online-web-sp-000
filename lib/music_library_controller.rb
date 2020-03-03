@@ -1,5 +1,5 @@
 class MusicLibraryController 
-  
+  @@input = nil
   def initialize(path = './db/mp3s')
     @path = path 
     @new = MusicImporter.new(@path)
@@ -16,8 +16,8 @@ class MusicLibraryController
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
-    input = gets.strip
-    while input.strip != "exit"
+    @@input = gets.strip
+    while @@input.strip != "exit"
       call 
       return
     end
