@@ -103,7 +103,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_number = gets.strip.to_i
-    binding.pry
+
     if song_number >= 1 && song_number <= Song.all.length
       songs = Song.all
       
