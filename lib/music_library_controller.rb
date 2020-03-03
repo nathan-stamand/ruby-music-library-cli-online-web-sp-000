@@ -103,14 +103,12 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_number = gets.strip.to_i
-    
-    list = list_songs[song_number - 1].split(" - ")
-    song_name = list[1]
-    artist_name = list[0].split(".")[1].strip
     if song_number >= 1 && song_number <= list_songs.length
+      list = list_songs[song_number - 1].split(" - ")
+      song_name = list[1]
+      artist_name = list[0].split(".")[1].strip
       puts "Playing #{song_name} by #{artist_name}"
     end
-
   end 
   
   def exit 
