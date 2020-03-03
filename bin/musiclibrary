@@ -9,6 +9,10 @@ var.call
 case var.input 
   when "list songs" 
     var.list_songs
+  when "list artists"
+    var.list_artists
+  when "list genres"
+    var.list_genres 
 end
     
 
