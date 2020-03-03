@@ -3,6 +3,7 @@
 require_relative '../config/environment'
 
 var = MusicLibraryController.new
+
 var.call
 
 case var.input 
