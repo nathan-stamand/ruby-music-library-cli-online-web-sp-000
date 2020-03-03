@@ -7,7 +7,7 @@ var = MusicLibraryController.new
 var.call
 
 case var.input 
-  when == "list songs" 
+  when "list songs" 
     var.list_songs
   end
     
